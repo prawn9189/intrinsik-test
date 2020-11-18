@@ -5,18 +5,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <form action="https://tinyurl.com/create.php" method="post" target="_blank">
+        <table align="center" cellpadding="5" bgcolor="#E7E7F7">
+          <tr>
+            <td>
+              <b>Enter a long URL to make <a href="https://tinyurl.com">tiny</a>:</b><br/>
+              <input type="text" name="url" size="30"/><input type="submit" name="submit" value="Make TinyURL!"/>
+            </td>
+          </tr>
+        </table>
+      </form>
       </header>
     </div>
   );
